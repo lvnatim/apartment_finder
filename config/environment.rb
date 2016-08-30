@@ -26,12 +26,13 @@ end
 
 # Development and Test Sinatra Configuration
 configure :development, :test do
-  require 'pry'
+  require 'pry' if development?
 end
 
 # Production Sinatra Configuration
 configure :production do
   # NOOP
+  require 'pg'
 end
 
 # Set up the database and models

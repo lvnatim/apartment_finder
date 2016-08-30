@@ -19,7 +19,7 @@
         <div class="carousel-inner" role="listbox">
           <% @listing.images.each do |image| %>
             <div class="item active">
-              <img src="/uploads/<%= image.image_identifier %>">
+              <img style="height:500px; width:700px;>" src="/uploads/<%= image.image_identifier %>">
             </div>
           <% end %>
         </div>
